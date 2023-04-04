@@ -429,7 +429,7 @@ html {
     color: #333333;
 }
 
-.about-box.container {
+.about-box.container, .advantages-box.container {
     padding: 0;
 }
 
@@ -478,4 +478,127 @@ h2.call-to-action-title {
     margin-top: 0;
     margin-bottom: 54px;
     max-width: 592px;
+}
+
+.email-block.container {
+    min-height: 415px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/form-background.jpg);
+    background-size: cover;
+}
+
+.email-block-title {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.email-block-decription {
+    margin-top: 0;
+    margin-bottom: 54px;
+    font-family: 'PT Sans';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 475px;
+}
+
+.subscribe-form-box {
+    min-width: 684px;
+}
+
+.signup-email-input {
+    min-width: 452px;
+    min-height: 52px;
+    box-sizing: border-box;
+    padding: 14px 20px;
+}
+
+.subscribe-form-button.button {
+    min-width: 232px;
+    min-height: 52px;
+    box-sizing: border-box;
+    background: #82B3D3;
+    border-radius: 0px 4px 4px 0px;
+    font-family: 'PT Sans';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: inherit;
+}
+
+li.footer-social-item {
+    list-style: none;
+}
+
+.page-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 120px;
+    align-items: center;
+}
+
+.vk {
+  width: 24px;
+  height: 14px;
+  background-image: url(../img/vk.svg);
+  background-size: cover;
+  display: block;
+}
+
+.telegram {
+  width: 18px;
+  height: 15px;
+  background-image: url(../img/telegram.svg);
+  background-size: cover;
+  display: block;  
+}
+
+.youtube {
+  width: 22px;
+  height: 17px;
+  background-image: url(../img/youtube.svg);
+  background-size: cover;
+  display: block;  
+}
+
+.page-footer-social-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 142px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.page-footer-phone {
+    font-family: 'PT Sans';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.subscribe-form-box-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
