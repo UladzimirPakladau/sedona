@@ -51,16 +51,16 @@
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <input class="control-input" type="checkbox" name="black" id="black">
-                <label for="black" class="control">Бассейн</label>                    
+                <input class="control-input" type="checkbox" name="pool" id="pool">
+                <label for="pool" class="control">Бассейн</label>                    
               </li>
               <li class="catalog-filter-item">
-                <input class="control-input" type="checkbox" name="white" id="white">
-                <label for="white" class="control">Парковка</label>
+                <input class="control-input" type="checkbox" name="parking" id="parking">
+                <label for="parking" class="control">Парковка</label>
               </li>
               <li class="catalog-filter-item">
-                <input class="control-input" type="checkbox" name="blue" id="blue">
-                <label for="blue" class="control">Wi-Fi</label>                  
+                <input class="control-input" type="checkbox" name="wifi" id="wifi">
+                <label for="wifi" class="control">Wi-Fi</label>                  
               </li>
             </ul>
           </fieldset>
@@ -68,29 +68,41 @@
 
 
           <fieldset class="catalog-filter-group bluetooth-group">
-            <legend class="catalog-filter-title">Bluetooth</legend>
+            <legend class="catalog-filter-title">Тип жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <input class="control-radio-input" type="radio" id="yes" name="Bluetooth" value="yes">
-                <label for="yes" class="control-radio">Есть</label>
+                <input class="control-radio-input" type="radio" id="hotel" name="hotel" value="hotel">
+                <label for="hotel" class="control-radio">Гостиница</label>
               </li>
               <li class="catalog-filter-item">
-                <input class="control-radio-input" type="radio" id="no" name="Bluetooth" value="no">
-                <label for="no" class="control-radio">Нет</label>                                      
+                <input class="control-radio-input" type="radio" id="motel" name="motel" value="motel">
+                <label for="motel" class="control-radio">Мотель</label>                                      
+              </li>
+              <li class="catalog-filter-item">
+                <input class="control-radio-input" type="radio" id="apartments" name="apartments" value="apartments">
+                <label for="apartments" class="control-radio">Апартаменты</label>                                      
               </li>
             </ul>
           </fieldset>
 
 
           <fieldset class="catalog-filter-group range">
-            <legend class="catalog-filter-title filter-title-price">Стоимость</legend>
+            <legend class="catalog-filter-title filter-title-price">Стоимость, ₽:</legend>
+
             <div class="catalog-filter-range-controls">
+
+              <div lass="catalog-filter-range-controls-price-wrapper">
+                <input class="controls-price-min" type="number" min="1" value="1">
+                <input class="controls-price-max" type="number" min="1" value="1">
+              </div>
+              
               <div class="catalog-filter-scale">
                 <div class="catalog-filter-bar"></div>
               </div>
               <button class="range-toggle range-toggle-min"></button>
               <button class="range-toggle range-toggle-max"></button>
             </div>
+
           </fieldset>
 
           <button class="filter-button button" type="submit">Показать</button>
