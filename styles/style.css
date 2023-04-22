@@ -695,9 +695,40 @@ li.footer-social-item {
     color: #000000;
     padding: 12px 20px;
     max-width: 143px;
+    position: relative;
 }
 
 .catalog-filter-range-controls-price-wrapper {
     display: flex;
     flex-wrap: wrap;
+}
+
+.price-min-wrapper, .price-max-wrapper {
+  position: relative;
+}
+
+.price-min-wrapper:after {
+    content: 'от';
+    position: absolute;
+    z-index: 5;
+    top: 14px;
+    right: 13px;
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    opacity: 0.5;
+}
+
+.price-max-wrapper:after {
+    content: 'до';
+    position: absolute;
+    z-index: 5;
+    top: 14px;
+    right: 13px;
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    opacity: 0.5;
 }
