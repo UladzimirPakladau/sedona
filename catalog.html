@@ -124,15 +124,15 @@
         <div class="hotel-catalog-search-result">Найдено гостиниц: <span class="search-result-number">38</span>
         </div>
         <div class="hotel-catalog-header-dropdown">
-          <select name="dropdown-costs" id="dropdown-costs">
+          <select name="dropdown-costs" id="dropdown-costs" class="dropdown-costs">
             <option value="cheap">Сначала дешёвые</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
         </div>
         <div class="filter-icons-wrapper">
-          <div class="filter-icons-item"><span class="visually-hidden">Раскладка сеткой</span></div>
-          <div class="filter-icons-item"><span class="visually-hidden">Крупная раскладка</span></div>
-          <div class="filter-icons-item"><span class="visually-hidden">Раскладка списком</span></div>
+          <div class="filter-icons-item view-web active"><span class="visually-hidden">Раскладка сеткой</span></div>
+          <div class="filter-icons-item view-huge"><span class="visually-hidden">Крупная раскладка</span></div>
+          <div class="filter-icons-item view-list"><span class="visually-hidden">Раскладка списком</span></div>
         </div>
       </div> 
 
@@ -211,6 +211,75 @@
             </form>
           </div> 
         </article> 
+
+
+
+  <article class="search-popup popup-switcher">
+    <form class="search-popup-form" action="https://echo.htmlacademy.ru/" method="post" target="_blank">
+
+      <div class="search-popup-header">
+        <h2 class="search-popup-title">Поиск гостиницы в Седоне</h2>
+        <a href="#" class="close-popup open-popup close-icon-popup-search" aria-label="закрыть"></a>
+      </div>  
+      <fieldset class="search-popup-fieldset">
+        <legend class="search-popup-legend visually-hidden">Подбор тура</legend> 
+
+        <div class="search-popup-date-check-in search-popup-item">
+          <label class="search-popup-label" for="date-check-in">Дата заезда:</label>
+          <input class="date-check-in-input" type="date" name="date-check-in" placeholder="Ваше имя" id="date-check-in" required>
+          <span class="calendar-icon"></span>    
+        </div>
+        <div class="search-popup-date-check-out search-popup-item">
+          <label class="search-popup-label" for="date-check-out">Дата выезда:</label>
+          <input class="date-check-out-input" type="date" name="date-check-out" placeholder="почта" id="date-check-out" required>
+          <span class="calendar-icon"></span>   
+        </div>  
+
+
+
+
+
+
+<div class="people-number-wrapper">
+        <div class="search-popup-number search-popup-item">
+          <div class="search-popup-label">Количество</div>
+          <div class="search-popup-number-wrapper">
+            <div class="number-minus-wrapper">
+              <a href="#" class="number-minus" aria-label="munis"></a>
+            </div>
+            <input class="search-popup-number-text delivery-input" type="text" name="count" value="1">
+            <div class="number-plus-wrapper">   
+              <a href="#" class="number-plus" aria-label="plus"></a>
+            </div>  
+          </div>
+        </div> 
+
+                <div class="search-popup-number search-popup-item">
+          <div class="search-popup-label">Количество: <span class="delivery-info">i</span>
+            <div class="hover-info">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</div>
+          </div>
+          <div class="search-popup-number-wrapper">
+            <div class="number-minus-wrapper">
+              <a href="#" class="number-minus" aria-label="munis"></a>
+            </div>
+            <input class="search-popup-number-text delivery-input" type="text" name="count" value="1">
+            <div class="number-plus-wrapper">   
+              <a href="#" class="number-plus" aria-label="plus"></a>
+            </div>  
+          </div>
+        </div> 
+</div>
+
+
+
+
+        <button class="search-popup-button button" type="submit">Отправить</button>   
+      </fieldset>
+    </form>     
+  </article>
+
+
+
       </main> 
 
       <footer class="page-footer container">

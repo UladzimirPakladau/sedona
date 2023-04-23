@@ -624,6 +624,7 @@ li.footer-social-item {
 .main-index .hero-block-filter.container {
   background-image: url(../img/background-catalog.jpg);
   padding: 35px 70px 70px 70px;
+  margin-bottom: 50px;
 }
 
 .hero-block-filter-title {
@@ -637,7 +638,7 @@ li.footer-social-item {
 }
 
 .catalog-page .container {
-    padding: 0 75px;
+    padding: 0 65px;
   }
 
   .breadcrumbs-item {
@@ -799,10 +800,212 @@ li.footer-social-item {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #E6E6E6;
 }
 
 .hotel-catalog-header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.hotel-catalog-search-result {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.dropdown-costs {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    padding: 14px 20px;
+    min-width: 292px;
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
+}
+
+.filter-icons-item {
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    border: 2px solid #E5E5E5;
+}
+
+.filter-icons-wrapper {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.view-web {
+    background-image: url(../img/filter-blocks.svg);
+    background-repeat: no-repeat;
+}
+
+.view-huge {
+    background-image: url(../img/filter-big-block.svg);
+    background-repeat: no-repeat;
+}
+
+.view-list {
+     background-image: url(../img/filter-list.svg);
+     background-repeat: no-repeat;
+}   
+
+.filter-icons-item {
+    background-position: center;
+}
+
+.view-web.active {
+  border: 2px solid #000000;
+}
+
+.hotel-catalog-carts-item {
+    padding: 20px;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    max-width: 340px;
+}
+
+.hotel-name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    grid-column: span 2;
+}
+
+.hotel-type {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.hotel-price {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.hotel-raiting-amount {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #333333;
+    padding: 9px 17px;
+    background: #F2F2F2;
+    border-radius: 4px;
+    max-width: 140px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.hotel-read-more {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 8px 15px;
+    background: #756157;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.hotel-to-favourite {
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 8px 10px;
+    background: #82B3D3;
+    border-radius: 4px;
+}
+
+.catalog-carts-item-description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 35px);
+    gap: 13px 19px;
+    align-items: center;
+}
+
+.hotel-stars {
+    background-image: url(../img/star.svg);
+    height: 100%;
+    background-repeat-y: no-repeat;
+    background-position: center left;
+}
+
+.hotel-stars.four-stars {
+    width: 73px;
+}
+
+.hotel-stars.three-stars {
+    width: 54px;
+}
+
+.hotel-stars.two-stars {
+    width: 37px;
+}
+
+.hotel-catalog-carts-item:last-child {
+    margin-bottom: 40px;
+}
+
+.pagination-box-item {
+    width: 60px;
+    height: 60px;
+    background: #82B3D3;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.pagination-box {
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.pagination-box-item.current-page {
+    background: #F2F2F2;
+    color: #000000;
+}
+
+.pagination-box-item.white-block {
+    color: #000000;
+    background: inherit;
+}
+
+.catalog-page .email-block-title, .catalog-page .email-block-decription {
+    color: #000000;
+}
+
+.catalog-page .email-block.container {
+    background-image: inherit;
 }
