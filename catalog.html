@@ -7,25 +7,26 @@
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="icon" href="img/misc/favicon.ico">
-  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="icon" href="img/favicon.ico"> 
 </head>
 <body class="catalog-page">
 
   <header class="page-header container">
     <div class="logo-wrapper">
-      <img class="logo-wrapper-img" width="140" height="70" src="img/logo.svg" alt="Логотип сайта">
+      <a href="index.html"><img class="logo-wrapper-img" width="140" height="70" src="img/logo.svg" alt="Логотип сайта"></a>
     </div>
 
     <nav class="navigation">
-      <a title="Перейти" class="navigation-link" href="#">Главная</a>
+      <a title="Перейти" class="navigation-link" href="index.html">Главная</a>
       <a title="Перейти" class="navigation-link" href="#">О Седоне</a>
-      <a title="Перейти" class="navigation-link" href="#">Гостиницы</a>
+      <a title="Перейти" class="navigation-link" href="catalog.html">Гостиницы</a>
     </nav>
 
     <div class="user-nav">
       <button class="user-nav-search" aria-label="Поиск"></button>
       <button class="user-nav-favourite" aria-label="В избранное"><span class="user-nav-favourite-number">12</span></button>
-      <a title="Получить преложение" class="user-nav-action-link">Хочу туда!</a>
+      <a title="Получить преложение" class="user-nav-action-link open-popup brown-button">Хочу туда!</a>
     </div>
   </header>
 
@@ -108,7 +109,7 @@
 
           </fieldset>
           <div class="filter-button-wrapper">
-            <button class="filter-button button-apply" type="submit">Применить</button>
+            <button class="filter-button button-apply blue-button" type="submit">Применить</button>
             <button class="filter-button button-reset" type="reset">Сбросить</button>
           </div>  
         </form>
@@ -143,8 +144,8 @@
             <div class="hotel-name">Amara Resort & Spa</div>
             <div class="hotel-type">Гостиница</div>
             <div class="hotel-price">От 4000 ₽</div>
-            <a class="hotel-read-more">подробнее</a>
-            <button class="hotel-to-favourite">в избранное</button>
+            <a class="hotel-read-more brown-button">подробнее</a>
+            <button class="hotel-to-favourite blue-button">в избранное</button>
             <div class="hotel-stars four-stars"></div>
             <div class="hotel-raiting-amount">Рейтинг: 8,5</div>
           </div>
@@ -155,7 +156,7 @@
             <div class="hotel-name">Villas at Poco Diablo</div>
             <div class="hotel-type">Гостиница</div>
             <div class="hotel-price">От 5000 ₽</div>
-            <a class="hotel-read-more">подробнее</a>
+            <a class="hotel-read-more brown-button">подробнее</a>
             <button class="hotel-to-favourite green-button">в избранном</button>
             <div class="hotel-stars four-stars"></div>
             <div class="hotel-raiting-amount">Рейтинг: 9,2</div>
@@ -167,8 +168,8 @@
             <div class="hotel-name">Desert Quail Inn</div>
             <div class="hotel-type">Гостиница</div>
             <div class="hotel-price">От 2500 ₽</div>
-            <a class="hotel-read-more">подробнее</a>
-            <button class="hotel-to-favourite">в избранное</button>
+            <a class="hotel-read-more brown-button">подробнее</a>
+            <button class="hotel-to-favourite blue-button">в избранное</button>
             <div class="hotel-stars three-stars"></div>
             <div class="hotel-raiting-amount">Рейтинг: 6,9</div>
           </div>
@@ -179,8 +180,8 @@
             <div class="hotel-name">GreenTree Inn</div>
             <div class="hotel-type">Гостиница</div>
             <div class="hotel-price">От 1500 ₽</div>
-            <a class="hotel-read-more">подробнее</a>
-            <button class="hotel-to-favourite">в избранное</button>
+            <a class="hotel-read-more brown-button">подробнее</a>
+            <button class="hotel-to-favourite blue-button">в избранное</button>
             <div class="hotel-stars two-stars"></div>
             <div class="hotel-raiting-amount">Рейтинг: 5,0</div>
           </div>
@@ -206,7 +207,7 @@
               <div class="subscribe-form-box-wrapper">              
                 <input type="text" name="signup-email" id="signup-email" class="signup-email-input" placeholder="Ваш e-mail" required>
                 <label for="signup-email" class="subscribe-form-box-label"></label> 
-                <button class="subscribe-form-button button" type="submit">Подписаться</button>
+                <button class="subscribe-form-button button blue-button" type="submit">Подписаться</button>
               </div>
             </form>
           </div> 
@@ -219,19 +220,21 @@
 
       <div class="search-popup-header">
         <h2 class="search-popup-title">Поиск гостиницы в Седоне</h2>
-        <a href="#" class="close-popup open-popup close-icon-popup-search" aria-label="закрыть"></a>
+        <div class="close-wrapper">
+          <a href="#" class="close-popup open-popup close-icon-popup-search" aria-label="закрыть"></a>
+        </div>
       </div>  
       <fieldset class="search-popup-fieldset">
         <legend class="search-popup-legend visually-hidden">Подбор тура</legend> 
 
         <div class="search-popup-date-check-in search-popup-item">
           <label class="search-popup-label" for="date-check-in">Дата заезда:</label>
-          <input class="date-check-in-input" type="date" name="date-check-in" placeholder="Ваше имя" id="date-check-in" required>
+          <input class="date-check-in-input" type="text" name="date-check-in" placeholder="Укажите дату" id="date-check-in" required>
           <span class="calendar-icon"></span>    
         </div>
         <div class="search-popup-date-check-out search-popup-item">
           <label class="search-popup-label" for="date-check-out">Дата выезда:</label>
-          <input class="date-check-out-input" type="date" name="date-check-out" placeholder="почта" id="date-check-out" required>
+          <input class="date-check-out-input" type="text" name="date-check-out" placeholder="Укажите дату" id="date-check-out" required>
           <span class="calendar-icon"></span>   
         </div>  
 
@@ -242,12 +245,12 @@
 
 <div class="people-number-wrapper">
         <div class="search-popup-number search-popup-item">
-          <div class="search-popup-label">Количество</div>
+          <div class="search-popup-title-age"><span>Взрослые:</span> </div>
           <div class="search-popup-number-wrapper">
             <div class="number-minus-wrapper">
               <a href="#" class="number-minus" aria-label="munis"></a>
             </div>
-            <input class="search-popup-number-text delivery-input" type="text" name="count" value="1">
+            <input class="search-popup-number-text" type="text" name="count" value="2">
             <div class="number-plus-wrapper">   
               <a href="#" class="number-plus" aria-label="plus"></a>
             </div>  
@@ -255,14 +258,14 @@
         </div> 
 
                 <div class="search-popup-number search-popup-item">
-          <div class="search-popup-label">Количество: <span class="delivery-info">i</span>
-            <div class="hover-info">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</div>
+          <div class="search-popup-title-age"><span class="children-title">Дети:</span> <span class="children-info">i</span>
+            <div class="hover-info">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
           </div>
           <div class="search-popup-number-wrapper">
             <div class="number-minus-wrapper">
               <a href="#" class="number-minus" aria-label="munis"></a>
             </div>
-            <input class="search-popup-number-text delivery-input" type="text" name="count" value="1">
+            <input class="search-popup-number-text delivery-input" type="text" name="count" value="2">
             <div class="number-plus-wrapper">   
               <a href="#" class="number-plus" aria-label="plus"></a>
             </div>  
@@ -273,7 +276,7 @@
 
 
 
-        <button class="search-popup-button button" type="submit">Отправить</button>   
+        <button class="search-popup-button button" type="submit">Найти</button>   
       </fieldset>
     </form>     
   </article>
@@ -307,6 +310,6 @@
         </a>
 
       </footer>  
-
+  <script src="js/popup.js"></script>
     </body>
     </html>
