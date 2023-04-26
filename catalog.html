@@ -20,7 +20,7 @@
     <nav class="navigation">
       <a title="Перейти" class="navigation-link" href="index.html">Главная</a>
       <a title="Перейти" class="navigation-link" href="#">О Седоне</a>
-      <a title="Перейти" class="navigation-link" href="catalog.html">Гостиницы</a>
+      <a title="Перейти" class="navigation-link active-link" href="catalog.html">Гостиницы</a>
     </nav>
 
     <div class="user-nav">
@@ -39,7 +39,7 @@
         <div class="breadcrumbs-home-icon breadcrumbs-item">
           <span class="visually-hidden">На главную</span>
         </div>
-        <span class="breadcrumbs-item">Гостиницы</span>
+        <a href="#" class="breadcrumbs-item">Гостиницы</a>
       </div>
 
       <div class="catalog-filter-box">
@@ -101,8 +101,8 @@
                 <div class="catalog-filter-bar">
                   <div class="catalog-filter-bar-scale"></div>
                 </div>
-              <button class="range-toggle range-toggle-min"></button>
-              <button class="range-toggle range-toggle-max"></button>
+                <button class="range-toggle range-toggle-min"></button>
+                <button class="range-toggle range-toggle-max"></button>
               </div>
 
             </div>
@@ -131,9 +131,9 @@
           </select>
         </div>
         <div class="filter-icons-wrapper">
-          <div class="filter-icons-item view-web active"><span class="visually-hidden">Раскладка сеткой</span></div>
-          <div class="filter-icons-item view-huge"><span class="visually-hidden">Крупная раскладка</span></div>
-          <div class="filter-icons-item view-list"><span class="visually-hidden">Раскладка списком</span></div>
+          <a class="filter-icons-item view-web"><span class="visually-hidden">Раскладка сеткой</span></a>
+          <a class="filter-icons-item view-huge"><span class="visually-hidden">Крупная раскладка</span></a>
+          <a class="filter-icons-item view-list"><span class="visually-hidden">Раскладка списком</span></a>
         </div>
       </div> 
 
@@ -150,7 +150,7 @@
             <div class="hotel-raiting-amount">Рейтинг: 8,5</div>
           </div>
         </div> 
-          <div class="hotel-catalog-carts-item">
+        <div class="hotel-catalog-carts-item">
           <img width="300" height="212" class="hotel-catalog-carts-item-img" src="img/hotel-diablo.jpg" alt="">
           <div class="catalog-carts-item-description">
             <div class="hotel-name">Villas at Poco Diablo</div>
@@ -162,7 +162,7 @@
             <div class="hotel-raiting-amount">Рейтинг: 9,2</div>
           </div>
         </div>
-          <div class="hotel-catalog-carts-item">
+        <div class="hotel-catalog-carts-item">
           <img width="300" height="212" class="hotel-catalog-carts-item-img" src="img/hotel-desert.jpg" alt="">
           <div class="catalog-carts-item-description">
             <div class="hotel-name">Desert Quail Inn</div>
@@ -174,7 +174,7 @@
             <div class="hotel-raiting-amount">Рейтинг: 6,9</div>
           </div>
         </div> 
-          <div class="hotel-catalog-carts-item">
+        <div class="hotel-catalog-carts-item">
           <img width="300" height="212" class="hotel-catalog-carts-item-img" src="img/hotel-green tree.jpg" alt="">
           <div class="catalog-carts-item-description">
             <div class="hotel-name">GreenTree Inn</div>
@@ -189,127 +189,127 @@
       </div>
 
       <div class="pagination-box">
-        <div class="pagination-box-item current-page">1</div>
-        <div class="pagination-box-item">2</div>
-        <div class="pagination-box-item">3</div>
-        <div class="pagination-box-item">4</div>
-        <div class="pagination-box-item white-block">...</div>
-        <div class="pagination-box-item">10</div>
+        <a href="#" class="pagination-box-item current-page">1</a>
+        <a href="#" class="pagination-box-item">2</a>
+        <a href="#" class="pagination-box-item">3</a>
+        <a href="#" class="pagination-box-item">4</a>
+        <a href="#" class="pagination-box-item white-block">...</a>
+        <a href="#" class="pagination-box-item">10</a>
       </div> 
-      </section>
+    </section>
 
 
-        <article class="email-block container">
-          <h2 class="email-block-title">Подпишитесь на рассылку</h2>
-          <p class="email-block-decription">Только полезная информация и никакого спама, честное бойскаутское! </p>
-          <div class="subscribe-form-box">
-            <form action="https://echo.htmlacademy.ru/" method="post">
-              <div class="subscribe-form-box-wrapper">              
-                <input type="text" name="signup-email" id="signup-email" class="signup-email-input" placeholder="Ваш e-mail" required>
-                <label for="signup-email" class="subscribe-form-box-label"></label> 
-                <button class="subscribe-form-button button blue-button" type="submit">Подписаться</button>
-              </div>
-            </form>
-          </div> 
-        </article> 
+    <article class="email-block container">
+      <h2 class="email-block-title">Подпишитесь на рассылку</h2>
+      <p class="email-block-decription">Только полезная информация и никакого спама, честное бойскаутское! </p>
+      <div class="subscribe-form-box">
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <div class="subscribe-form-box-wrapper">              
+            <input type="text" name="signup-email" id="signup-email" class="signup-email-input" placeholder="Ваш e-mail" required>
+            <label for="signup-email" class="subscribe-form-box-label"></label> 
+            <button class="subscribe-form-button button blue-button" type="submit">Подписаться</button>
+          </div>
+        </form>
+      </div> 
+    </article> 
 
 
 
-  <article class="search-popup popup-switcher">
-    <form class="search-popup-form" action="https://echo.htmlacademy.ru/" method="post" target="_blank">
+    <article class="search-popup popup-switcher">
+      <form class="search-popup-form" action="https://echo.htmlacademy.ru/" method="post" target="_blank">
 
-      <div class="search-popup-header">
-        <h2 class="search-popup-title">Поиск гостиницы в Седоне</h2>
-        <div class="close-wrapper">
-          <a href="#" class="close-popup open-popup close-icon-popup-search" aria-label="закрыть"></a>
-        </div>
-      </div>  
-      <fieldset class="search-popup-fieldset">
-        <legend class="search-popup-legend visually-hidden">Подбор тура</legend> 
-
-        <div class="search-popup-date-check-in search-popup-item">
-          <label class="search-popup-label" for="date-check-in">Дата заезда:</label>
-          <input class="date-check-in-input" type="text" name="date-check-in" placeholder="Укажите дату" id="date-check-in" required>
-          <span class="calendar-icon"></span>    
-        </div>
-        <div class="search-popup-date-check-out search-popup-item">
-          <label class="search-popup-label" for="date-check-out">Дата выезда:</label>
-          <input class="date-check-out-input" type="text" name="date-check-out" placeholder="Укажите дату" id="date-check-out" required>
-          <span class="calendar-icon"></span>   
+        <div class="search-popup-header">
+          <h2 class="search-popup-title">Поиск гостиницы в Седоне</h2>
+          <div class="close-wrapper">
+            <a href="#" class="close-popup open-popup close-icon-popup-search" aria-label="закрыть"></a>
+          </div>
         </div>  
+        <fieldset class="search-popup-fieldset">
+          <legend class="search-popup-legend visually-hidden">Подбор тура</legend> 
 
-
-
-
-
-
-<div class="people-number-wrapper">
-        <div class="search-popup-number search-popup-item">
-          <div class="search-popup-title-age"><span>Взрослые:</span> </div>
-          <div class="search-popup-number-wrapper">
-            <div class="number-minus-wrapper">
-              <a href="#" class="number-minus" aria-label="munis"></a>
-            </div>
-            <input class="search-popup-number-text" type="text" name="count" value="2">
-            <div class="number-plus-wrapper">   
-              <a href="#" class="number-plus" aria-label="plus"></a>
-            </div>  
+          <div class="search-popup-date-check-in search-popup-item">
+            <label class="search-popup-label" for="date-check-in">Дата заезда:</label>
+            <input class="date-check-in-input" type="text" name="date-check-in" placeholder="Укажите дату" id="date-check-in" required>
+            <span class="calendar-icon"></span>    
           </div>
-        </div> 
+          <div class="search-popup-date-check-out search-popup-item">
+            <label class="search-popup-label" for="date-check-out">Дата выезда:</label>
+            <input class="date-check-out-input" type="text" name="date-check-out" placeholder="Укажите дату" id="date-check-out" required>
+            <span class="calendar-icon"></span>   
+          </div>  
 
-                <div class="search-popup-number search-popup-item">
-          <div class="search-popup-title-age"><span class="children-title">Дети:</span> <span class="children-info">i</span>
-            <div class="hover-info">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
+
+
+
+
+
+          <div class="people-number-wrapper">
+            <div class="search-popup-number search-popup-item">
+              <div class="search-popup-title-age"><span>Взрослые:</span> </div>
+              <div class="search-popup-number-wrapper">
+                <div class="number-minus-wrapper">
+                  <a href="#" class="number-minus" aria-label="munis"></a>
+                </div>
+                <input class="search-popup-number-text" type="text" name="count" value="2">
+                <div class="number-plus-wrapper">   
+                  <a href="#" class="number-plus" aria-label="plus"></a>
+                </div>  
+              </div>
+            </div> 
+
+            <div class="search-popup-number search-popup-item">
+              <div class="search-popup-title-age"><span class="children-title">Дети:</span> <span class="children-info">i</span>
+                <div class="hover-info">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
+              </div>
+              <div class="search-popup-number-wrapper">
+                <div class="number-minus-wrapper">
+                  <a href="#" class="number-minus" aria-label="munis"></a>
+                </div>
+                <input class="search-popup-number-text delivery-input" type="text" name="count"a value="2">
+                <div class="number-plus-wrapper">   
+                  <a href="#" class="number-plus" aria-label="plus"></a>
+                </div>  
+              </div>
+            </div> 
           </div>
-          <div class="search-popup-number-wrapper">
-            <div class="number-minus-wrapper">
-              <a href="#" class="number-minus" aria-label="munis"></a>
-            </div>
-            <input class="search-popup-number-text delivery-input" type="text" name="count" value="2">
-            <div class="number-plus-wrapper">   
-              <a href="#" class="number-plus" aria-label="plus"></a>
-            </div>  
-          </div>
-        </div> 
-</div>
 
 
 
 
-        <button class="search-popup-button button" type="submit">Найти</button>   
-      </fieldset>
-    </form>     
-  </article>
+          <button class="search-popup-button button" type="submit">Найти</button>   
+        </fieldset>
+      </form>     
+    </article>
 
 
 
-      </main> 
+  </main> 
 
-      <footer class="page-footer container">
-        <ul class="page-footer-social-list">
-          <li class="footer-social-item">
-            <a target="_blank" rel="nofollow noopener" class="footer-social-link vk" href="#">
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a target="_blank" rel="nofollow noopener" class="footer-social-link telegram" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Телеграм</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a target="_blank" rel="nofollow noopener" class="footer-social-link youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Ютуб</span>
-            </a>
-          </li>
-        </ul>
-
-        <div class="page-footer-phone">+7 (812) 812-12-12</div>
-
-        <a class="page-footer-copyright-link" href="https://htmlacademy.ru/"><img src="img/html-academy.svg" width="115" height="33" alt="html academy">
+  <footer class="page-footer container">
+    <ul class="page-footer-social-list">
+      <li class="footer-social-item">
+        <a target="_blank" rel="nofollow noopener" class="footer-social-link vk" href="#">
+          <span class="visually-hidden">Вконтакте</span>
         </a>
+      </li>
+      <li class="footer-social-item">
+        <a target="_blank" rel="nofollow noopener" class="footer-social-link telegram" href="https://t.me/htmlacademy">
+          <span class="visually-hidden">Телеграм</span>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a target="_blank" rel="nofollow noopener" class="footer-social-link youtube" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">Ютуб</span>
+        </a>
+      </li>
+    </ul>
 
-      </footer>  
+    <a href="tel:+7(812)812-12-12" class="page-footer-phone">+7 (812) 812-12-12</a>
+
+    <a class="page-footer-copyright-link" href="https://htmlacademy.ru/"><span class="visually-hidden">Html academy copyright</span>
+    </a>
+
+  </footer>  
   <script src="js/popup.js"></script>
-    </body>
-    </html>
+</body>
+</html>
