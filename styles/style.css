@@ -101,7 +101,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  min-width: 1440px;
 }
 
 html {
@@ -111,7 +110,7 @@ html {
 .container {
   width: 100%;
   max-width: 1200px;
-  padding: 0 40px;
+  padding: 0 70px;
   box-sizing: border-box;
   margin: 0 auto;
 }
@@ -124,44 +123,53 @@ html {
 }
 
 .navigation-link {
-  font-family: 'PT Sans';
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  text-transform: capitalize;
-  color: #000000;
-  text-decoration: none;
-  padding: 20px 18px;
-  position: relative;
+    font-family: 'PT Sans';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #000000;
+    text-decoration: none;
+    padding: 12px 14px;
+    position: relative;
+    display: inline-block;
+    margin-top: -11px;
 }
 
 .logo-wrapper {
   margin-right: 28px;
+  position: relative;
+  z-index: 5;
 }
 
 .user-nav {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  min-width: 268px;
-  justify-content: space-between;
+    margin-left: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    min-width: 257px;
+    gap: 25px;
 }
 
 .user-nav-action-link {
-  padding: 8px 50px;
-  max-width: 160px;
-  max-height: 36px;
-  background: #756157;
-  border-radius: 4px;
-  font-family: 'PT Sans';
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  cursor: pointer;
+padding: 8px 30px;
+    min-width: 160px;
+    max-height: 36px;
+    display: block;
+    background: #756157;
+    border-radius: 4px;
+    font-family: 'PT Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-left: 7px;
+    position: relative;
+    top: -8px;
 }
 
 .user-nav-search {
@@ -186,22 +194,22 @@ html {
 }
 
 .user-nav-favourite-number {
-  position: absolute;
-  background: #7DB54F;
-  border-radius: 10px;
-  width: 20px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  color: white;
-  justify-content: center;
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 10px;
-  top: -12px;
-  right: -12px;
+    position: absolute;
+    background: #7DB54F;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    top: -11px;
+    right: -8px;
 }
 
 .hero-block {
@@ -215,6 +223,7 @@ html {
   background-size: cover;
   position: relative;
   margin-bottom: 69px;
+  margin-top: -16px;
 }
 
 .hero-block:after {
@@ -226,7 +235,7 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  bottom: -5px;
+  bottom: -1px;
   background-position: center;
 }
 
@@ -260,6 +269,7 @@ html {
 
 .hero-block-subtitle {
   margin-bottom: 94px;
+  margin-top: -30px;
 }
 
 .about-box {
@@ -287,7 +297,7 @@ html {
   line-height: 26px;
   text-align: center;
   color: #333333;
-  margin-bottom: 69px;
+  margin-bottom: 90px;
 }
 
 .about-box-squares {
@@ -365,7 +375,7 @@ html {
   background: rgba(0, 0, 0, 0.3);
   display: block;
   left: 60px;
-  bottom: -30px;
+  bottom: -32px;
 }
 
 .about-box-first .square-item-title:after, .about-box-seventh .square-item-title:after {
@@ -414,7 +424,7 @@ html {
   font-family: 'PT Sans';
   font-weight: 700;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 24px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 30px;
@@ -447,19 +457,20 @@ section.call-to-action.container {
 }
 
 .call-to-action-link {
-  padding: 8px 50px;
-  max-width: 376px;
-  max-height: 52px;
-  background: #756157;
-  border-radius: 4px;
-  font-family: 'PT Sans';
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  text-decoration: none;
+    padding: 8px 50px;
+    min-width: 377px;
+    height: 52px;
+    background: #756157;
+    border-radius: 4px;
+    font-family: 'PT Sans';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
 h2.call-to-action-title {
@@ -471,6 +482,7 @@ h2.call-to-action-title {
   text-transform: uppercase;
   color: #000000;
   margin-bottom: 20px;
+  margin-top: -3px;
 }
 
 .call-to-action-decription {
@@ -503,7 +515,7 @@ h2.call-to-action-title {
   line-height: 36px;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-top: 0;
+  margin-top: -12px;
   margin-bottom: 20px;
 }
 
@@ -524,10 +536,14 @@ h2.call-to-action-title {
 }
 
 .signup-email-input {
-  min-width: 452px;
-  min-height: 52px;
-  box-sizing: border-box;
-  padding: 14px 20px;
+min-width: 452px;
+    min-height: 52px;
+    box-sizing: border-box;
+    padding: 10px 18px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'PT Sans';
 }
 
 .subscribe-form-button.button {
@@ -633,7 +649,9 @@ li.footer-social-item {
   width: 142px;
   align-items: center;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 0;
+  margin-top: 20px;
 }
 
 .page-footer-phone {
@@ -668,14 +686,17 @@ li.footer-social-item {
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .main-index .hero-block-filter.container {
-  background-image: url(../img/background-catalog.jpg);
-  padding: 35px 70px 70px 70px;
-  margin-bottom: 50px;
+background-image: url(../img/background-catalog.jpg);
+    padding: 35px 70px 70px 70px;
+    margin-bottom: 49px;
+    margin-top: -16px;
+    background-size: cover;
+    max-height: 412px;
 }
+
 
 .hero-block-filter-title {
   font-family: 'PT Sans';
@@ -685,10 +706,16 @@ li.footer-social-item {
   line-height: 78px;
   color: #FFFFFF;
   margin: 0;
+  margin-bottom: 7px;
 }
 
-.catalog-page .container {
-  padding: 0 65px;
+.catalog-page  .active-link:after {
+    width: 77%;
+    margin-left: 0px;
+}
+
+.catalog-page .logo-wrapper {
+    margin-right: 30px;
 }
 
 .breadcrumbs-item {
@@ -730,6 +757,7 @@ li.footer-social-item {
   text-transform: capitalize;
   color: #FFFFFF;
   margin-bottom: 32px;
+  font-family: 'PT Sans';
 }
 
 .control, .control-radio {
@@ -739,7 +767,7 @@ li.footer-social-item {
   color: #FFFFFF;
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   flex-wrap: wrap;
 }
 
@@ -757,10 +785,12 @@ li.footer-social-item {
   line-height: 24px;
   color: #000000;
   padding: 12px 20px;
-  max-width: 143px;
+  width: 143px;
   position: relative;
   background: #F2F2F2;
   border: none;
+  box-sizing: border-box;
+  font-family: 'PT Sans';
 }
 
 .controls-price-min:hover, .controls-price-max:hover {
@@ -771,7 +801,7 @@ li.footer-social-item {
 .catalog-filter-range-controls-price-wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 36px;
+  margin-bottom: 45px;
   gap: 2px;
 }
 
@@ -813,9 +843,11 @@ li.footer-social-item {
 }
 
 .catalog-filter-bar {
-  background: #ffffff;
-  height: 4px;
-  width: 260px;
+    background: #ffffff;
+    height: 4px;
+    width: 208px;
+    left: 7px;
+    position: relative;
 }
 
 .range-toggle {
@@ -829,13 +861,13 @@ li.footer-social-item {
 }
 
 .range-toggle.range-toggle-min {
-  top: -9px;
-  left: -2px;
+    top: -8px;
+    left: 1px;
 }
 
 .range-toggle.range-toggle-max {
-  right: 106px;
-  top: -7px;
+  right: 60px;
+  top: -8px;
 }
 
 .filter-button-wrapper {
@@ -860,10 +892,12 @@ li.footer-social-item {
 .button-apply {
   margin-top: 56px;
   margin-bottom: 32px;
+  font-family: 'PT Sans';
 }
 
 .button-reset {
   background: inherit;
+  font-family: 'PT Sans';
 }
 
 .hotel-catalog-carts {
@@ -888,6 +922,8 @@ li.footer-social-item {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  font-family: 'PT Sans';
+  margin-right: 200px;
 }
 
 .dropdown-costs {
@@ -903,6 +939,11 @@ li.footer-social-item {
   background-image: url(../img/arrow-down.svg);
   background-repeat: no-repeat;
   background-position: 260px;
+    font-family: 'PT Sans';
+}
+
+.hotel-catalog-header-dropdown {
+    margin-right: 58px;
 }
 
 .filter-icons-item {
@@ -969,6 +1010,8 @@ li.footer-social-item {
   line-height: 28px;
   color: #000000;
   grid-column: span 2;
+  font-family: 'PT Sans';
+}
 }
 
 .hotel-type {
@@ -980,10 +1023,12 @@ li.footer-social-item {
 }
 
 .hotel-price {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #333333;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    text-align: right;
+    font-family: 'PT Sans';
 }
 
 .hotel-raiting-amount {
@@ -1009,6 +1054,7 @@ li.footer-social-item {
   padding: 8px 15px;
   background: #756157;
   border-radius: 4px;
+   font-family: 'PT Sans';
   text-align: center;
 }
 
@@ -1022,13 +1068,14 @@ li.footer-social-item {
   padding: 8px 10px;
   background: #82B3D3;
   border-radius: 4px;
+  font-family: 'PT Sans';
 }
 
 .catalog-carts-item-description {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(4, 35px);
-  gap: 13px 19px;
+  gap: 7px 19px;
   align-items: center;
 }
 
@@ -1734,15 +1781,15 @@ a.page-footer-copyright-link:active {
 }
 
 .active-link:after {
-  content: ' ';
-  display: block;
-  position: absolute;
-  width: 65%;
-  height: 100%;
-  top: 0px;
-  margin-left: 18px;
-  border-bottom: 2px solid #756257;
-  z-index: 5;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 71%;
+    height: 100%;
+    top: 7px;
+    margin-left: 16px;
+    border-bottom: 2px solid #756257;
+    z-index: 5;
 }
 
 .close-wrapper:hover {
@@ -1760,3 +1807,23 @@ a.page-footer-copyright-link:active {
   opacity: 0.3;
 }
 
+.navigation {
+    min-height: 43px;
+}
+
+.body-wrapper-inner {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    margin: 0px 40px;
+}
+
+.infrastructure-group {
+    margin-right: 67px;
+}
+
+.house-group {
+    margin-right: 143px;
+}
+
+.range {
+    margin-right: 70px;
+}
