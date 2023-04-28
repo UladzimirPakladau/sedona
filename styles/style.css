@@ -939,7 +939,7 @@ background-image: url(../img/background-catalog.jpg);
   background-image: url(../img/arrow-down.svg);
   background-repeat: no-repeat;
   background-position: 260px;
-    font-family: 'PT Sans';
+  font-family: 'PT Sans';
 }
 
 .hotel-catalog-header-dropdown {
