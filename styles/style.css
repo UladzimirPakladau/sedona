@@ -704,11 +704,11 @@ li.footer-social-item {
 
 .main-index .hero-block-filter.container {
   background-image: url(../img/background-catalog.jpg);
-  padding: 35px 70px 70px 70px;
+  padding: 35px 70px 55px 70px;
   margin-bottom: 49px;
   margin-top: -16px;
   background-size: cover;
-  max-height: 412px;
+  min-height: 412px;
 }
 
 
@@ -877,7 +877,7 @@ li.footer-social-item {
 
 .range-toggle.range-toggle-min {
   top: -8px;
-  left: 1px;
+  left: 0;
 }
 
 .range-toggle.range-toggle-max {
@@ -1888,4 +1888,8 @@ a.page-footer-copyright-link:active {
 
 .catalog-page .signup-email-input {
     background: #F2F2F2;
+}
+
+span.breadcrumbs-item:hover {
+    color: #FFFFFF;
 }
