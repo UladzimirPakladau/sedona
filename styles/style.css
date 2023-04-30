@@ -642,7 +642,7 @@ li.footer-social-item {
 .youtube:focus {
   background-image: url(../img/youtube-2.svg);
   opacity: 1;
-  outline: none;focus
+  outline: none;
 }
 
 .vk:active{
@@ -1027,7 +1027,6 @@ li.footer-social-item {
   grid-column: span 2;
   font-family: 'PT Sans';
 }
-}
 
 .hotel-type {
   font-style: normal;
@@ -1073,6 +1072,7 @@ li.footer-social-item {
   border-radius: 4px;
   font-family: 'PT Sans';
   text-align: center;
+  text-decoration: none;
 }
 
 .hotel-to-favourite {
