@@ -783,6 +783,7 @@ li.footer-social-item {
   align-items: center;
   margin-bottom: 17px;
   flex-wrap: wrap;
+  font-family: 'PT Sans';
 }
 
 .controls-price-min {
@@ -1853,7 +1854,7 @@ a.page-footer-copyright-link:active {
 }
 
 .house-group {
-  margin-right: 143px;
+  margin-right: 152px;
 }
 
 .range {
