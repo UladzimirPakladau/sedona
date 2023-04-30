@@ -939,6 +939,7 @@ li.footer-social-item {
   color: #000000;
   font-family: 'PT Sans';
   margin-right: 187px;
+  max-width: 350px;
 }
 
 .dropdown-costs {
@@ -1016,7 +1017,8 @@ li.footer-social-item {
   border-radius: 4px;
   margin-bottom: 18px;
   box-sizing: border-box;
-  max-width: 340px;
+  width: 340px;
+  overflow: hidden;
 }
 
 .hotel-name {
@@ -1034,6 +1036,7 @@ li.footer-social-item {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  font-family: 'PT Sans';
 }
 
 .hotel-price {
@@ -1057,7 +1060,6 @@ li.footer-social-item {
   max-width: 140px;
   text-align: center;
   box-sizing: border-box;
-  margin-top: 22px;
   font-family: 'PT Sans';
 }
 
@@ -1091,9 +1093,13 @@ li.footer-social-item {
 .catalog-carts-item-description {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4, 35px);
-  gap: 7px 19px;
+  grid-template-rows: repeat(4, auto);
+  gap: 16px 19px;
   align-items: center;
+}
+
+.hotel-read-more.brown-button {
+    min-height: inherit;
 }
 
 .hotel-stars {
@@ -1108,9 +1114,6 @@ li.footer-social-item {
   background-repeat: space no-repeat;
 }
 
-.hotel-stars {
-  margin-top: 22px;
-}
 
 .hotel-stars.three-stars {
   width: 65px;
@@ -1862,7 +1865,9 @@ a.page-footer-copyright-link:active {
 }
 
 .hotel-catalog-carts-item-img {
-  margin-bottom: 4px;
+  margin-bottom: 7px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .catalog-page .email-block-title {
