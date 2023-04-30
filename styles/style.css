@@ -1868,7 +1868,7 @@ a.page-footer-copyright-link:active {
   margin-top: -8px;
 }
 
-.catalog-page  .page-footer {
+.catalog-page .page-footer {
   margin-top: 5px;
 }
 
@@ -1883,4 +1883,8 @@ a.page-footer-copyright-link:active {
 
 .page-footer-social-list {
   margin-top: 16px;
+}
+
+.catalog-page .signup-email-input {
+    background: #F2F2F2;
 }
