@@ -100,7 +100,9 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-width: 1280px;
+  box-sizing: border-box;
+  padding: 0 40px;
 }
 
 html {
@@ -230,7 +232,7 @@ html {
   content: '';
   display: block;
   background: url(../img/triangle.svg);
-  min-width: 1205px;
+  min-width: 1200px;
   height: 57px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -365,6 +367,11 @@ html {
   line-height: 21px;
   text-align: center;
   max-width: 230px;
+  color: #333333;
+}
+
+.about-box-first .square-item-description, .about-box-seventh .square-item-description {
+    color: #FFFFFF;
 }
 
 .square-item-title:after {
@@ -418,6 +425,7 @@ html {
   align-items: center;
   justify-content: center;
   text-align: center;
+  min-height: 385px;
 }
 
 .advantage-item-title {
@@ -456,6 +464,7 @@ section.call-to-action.container {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 30px;
 }
 
 .call-to-action-link {
@@ -507,6 +516,7 @@ h2.call-to-action-title {
   align-items: center;
   background-image: url(../img/form-background.jpg);
   background-size: cover;
+  padding: 20px;
 }
 
 .email-block-title {
@@ -546,6 +556,8 @@ h2.call-to-action-title {
   font-size: 18px;
   line-height: 24px;
   font-family: 'PT Sans';
+  border: inherit;
+  border-radius: 4px 0px 0px 4px;
 }
 
 .subscribe-form-button.button {
@@ -1823,10 +1835,13 @@ a.page-footer-copyright-link:active {
 }
 
 .body-wrapper-inner {
+  width: 1200px;
+  max-width: 100%;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-  margin: 0px 40px;
+  margin: 0px auto;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .main-index {

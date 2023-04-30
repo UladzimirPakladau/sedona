@@ -6,7 +6,6 @@
   <meta name="description" content="Седона - туристический сайт">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="styles/style.css">
-  <link rel="icon" href="img/misc/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="img/favicon.ico">   
 </head>
@@ -24,8 +23,8 @@
       </nav>
 
       <div class="user-nav">
-        <button class="user-nav-search" aria-label="Поиск"></button>
-        <button class="user-nav-favourite" aria-label="В избранное"><span class="user-nav-favourite-number">12</span></button>
+        <button type="button" class="user-nav-search" aria-label="Поиск"></button>
+        <button type="button" class="user-nav-favourite" aria-label="В избранное"><span class="user-nav-favourite-number">12</span></button>
         <a title="Получить преложение" class="user-nav-action-link open-popup brown-button">Хочу сюда!</a>
       </div>
     </header>
@@ -104,8 +103,8 @@
         <div class="subscribe-form-box">
           <form action="https://echo.htmlacademy.ru/" method="post">
             <div class="subscribe-form-box-wrapper">              
-              <input type="text" name="signup-email" id="signup-email" class="signup-email-input" placeholder="Ваш e-mail" required>
-              <label for="signup-email" class="subscribe-form-box-label"></label> 
+              <input type="email" name="signup-email" id="signup-email" class="signup-email-input" placeholder="Ваш e-mail" required>
+              <label for="signup-email" class="subscribe-form-box-label"><span class="visually-hidden">Подписаться на рассылку</span></label> 
               <button class="subscribe-form-button button blue-button" type="submit">Подписаться</button>
             </div>
           </form>
@@ -140,9 +139,9 @@
                 <div class="search-popup-title-age"><span>Взрослые:</span> </div>
                 <div class="search-popup-number-wrapper">
                   <div class="number-minus-wrapper">
-                    <a href="#" class="number-minus" aria-label="munis"></a>
+                    <a href="#" class="number-minus" aria-label="minus"></a>
                   </div>
-                  <input class="search-popup-number-text" type="text" name="count" value="2">
+                  <input class="search-popup-number-text" aria-label="число взрослых" type="text" name="count" value="2">
                   <div class="number-plus-wrapper">   
                     <a href="#" class="number-plus" aria-label="plus"></a>
                   </div>  
@@ -155,9 +154,9 @@
                 </div>
                 <div class="search-popup-number-wrapper">
                   <div class="number-minus-wrapper">
-                    <a href="#" class="number-minus" aria-label="munis"></a>
+                    <a href="#" class="number-minus" aria-label="minus"></a>
                   </div>
-                  <input class="search-popup-number-text delivery-input" type="text" name="count" value="2">
+                  <input class="search-popup-number-text delivery-input" aria-label="число детей" type="text" name="count" value="2">
                   <div class="number-plus-wrapper">   
                     <a href="#" class="number-plus" aria-label="plus"></a>
                   </div>  
@@ -173,7 +172,7 @@
     <footer class="page-footer container">
       <ul class="page-footer-social-list">
         <li class="footer-social-item">
-          <a target="_blank" rel="nofollow noopener" class="footer-social-link vk" href="#">
+          <a target="_blank" rel="nofollow noopener" class="footer-social-link vk" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
@@ -188,7 +187,7 @@
           </a>
         </li>
       </ul>
-      <a href="tel:+7(812)812-12-12" class="page-footer-phone">+7 (812) 812-12-12</a>
+      <a href="tel:+78128121212" class="page-footer-phone">+7 (812) 812-12-12</a>
       <a class="page-footer-copyright-link" href="https://htmlacademy.ru/"><span class="visually-hidden">Html academy copyright</span>
       </a>
     </footer>
