@@ -17,9 +17,11 @@
       </div>
 
       <nav class="navigation">
-        <a title="Перейти" class="navigation-link active-link" href="index.html">Главная</a>
-        <a title="Перейти" class="navigation-link" href="#">О Седоне</a>
-        <a title="Перейти" class="navigation-link" href="catalog.html">Гостиницы</a>
+        <ul class="navigation-list">
+          <li class="navigation-item"><a title="Перейти" class="navigation-link active-link" href="index.html">Главная</a></li>
+          <li class="navigation-item"><a title="Перейти" class="navigation-link" href="#">О Седоне</a></li>
+          <li class="navigation-item"><a title="Перейти" class="navigation-link" href="catalog.html">Гостиницы</a></li>
+        </ul>
       </nav>
 
       <div class="user-nav">
@@ -41,54 +43,65 @@
         <h2 class="about-box-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="about-box-decription">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
 
-        <div class="about-box-squares">
-          <div class="about-box-square-item about-box-first">
-            <div class="square-item-title">Настоящий городок</div>
-            <div class="square-item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</div>
-          </div>
+        <ul class="about-box-squares">
+          <li class="about-box-square-item about-box-first">
+            <h3 class="square-item-title">Настоящий городок</h3>
+            <p class="square-item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </li>
+
           <div class="about-box-square-item about-box-second"></div>
-          <div class="about-box-square-item about-box-third">
-            <div class="square-item-title">Небольшая площадь</div>
-            <div class="square-item-description">Все достопримечательности находятся очень близко</div>
-          </div>
-          <div class="about-box-square-item about-box-fourth">
-            <div class="square-item-title">Красивая дорога</div>
-            <div class="square-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</div>
-          </div>
-          <div class="about-box-square-item about-box-fifth">
-            <div class="square-item-title">Мало туристов</div>
-            <div class="square-item-description">Большинство едет в Гранд Каньон и толпится там</div>
-          </div>
-          <div class="about-box-square-item about-box-sixth"></div>
-          <div class="about-box-square-item about-box-seventh">
-            <div class="square-item-title">Там есть <br>мост дьявола</div>
-            <div class="square-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</div>        
-          </div>
-        </div>
+
+          <li class="about-box-square-item about-box-third">
+            <h3 class="square-item-title">Небольшая площадь</h3>
+            <p class="square-item-description">Все достопримечательности находятся очень близко</p>
+          </li>
+
+          <li class="about-box-square-item about-box-fourth">
+            <h3 class="square-item-title">Красивая дорога</h3>
+            <p class="square-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+
+          <li class="about-box-square-item about-box-fifth">
+            <h3 class="square-item-title">Мало туристов</h3>
+            <p class="square-item-description">Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+
+          <li class="about-box-square-item about-box-sixth"></li>
+
+          <li class="about-box-square-item about-box-seventh">
+            <h3 class="square-item-title">Там есть <br>мост дьявола</h3>
+            <p class="square-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>        
+          </li>
+
+        </ul>
+
       </section>
 
       <section class="advantages-box container">
         <h2 class="advantages-box-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <p class="advantages-box-decription">Опытный персонал и качественное обслуживание!</p>
-        <div class="advantages-box-wrapper">
-          <div class="advantage-item item-home">
+
+        <ul class="advantages-box-wrapper">
+          <li class="advantage-item item-home">
             <img class="advantage-item-img" width="75" height="72" src="img/home.svg" alt="Доступное жильё">
             <div class="advantage-item-title">Жильё</div>
             <div class="advantage-item-description">Рекомендуем пожить <br>в настоящем мотеле,<br> всё как в кино!</div>
-          </div>
+          </li>
 
-          <div class="advantage-item">
+          <li class="advantage-item">
             <img class="advantage-item-img" width="74" height="70" src="img/food.svg" alt="Вкусная еда">
             <div class="advantage-item-title">Еда</div>
             <div class="advantage-item-description">Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!</div>
-          </div>
+          </li>
 
-          <div class="advantage-item item-present">
+          <li class="advantage-item item-present">
             <img class="advantage-item-img" width="64" height="76" src="img/present.svg" alt="Сувениры на память">
             <div class="advantage-item-title">Сувениры</div>
             <div class="advantage-item-description">Не только китайского,<br> но и настоящего местного производства!</div>
-          </div>
-        </div>
+          </li>
+
+        </ul>
+
       </section> 
 
       <section class="call-to-action container">
@@ -188,8 +201,7 @@
         </li>
       </ul>
       <a href="tel:+78128121212" class="page-footer-phone">+7 (812) 812-12-12</a>
-      <a class="page-footer-copyright-link" href="https://htmlacademy.ru/"><span class="visually-hidden">Html academy copyright</span>
-      </a>
+      <a class="page-footer-copyright-link" href="https://htmlacademy.ru/" aria-label="Html academy copyright"></a>
     </footer>
   </div>  
   <script src="js/popup.js"></script>

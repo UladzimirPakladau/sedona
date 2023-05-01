@@ -30,17 +30,15 @@
     </header>
 
     <main class="main-index">
-      <h1 class="visually-hidden">Страница каталога</h1>
-
       <section class="hero-block-filter container">
-        <h2 class="hero-block-filter-title">Гостиницы Седоны</h2>
+        <h1 class="hero-block-filter-title">Гостиницы Седоны</h1>
         <div class="breadcrumbs">
           <a class="home-link" href="index.html">
           <div class="breadcrumbs-home-icon breadcrumbs-item">
             <span class="visually-hidden">На главную</span>
           </div>
           </a>
-
+          <span class="breadcrumbs-item">></span>
           <span class="breadcrumbs-item">Гостиницы</span>
         </div>
 
@@ -96,8 +94,8 @@
                   <div class="catalog-filter-bar">
                     <div class="catalog-filter-bar-scale"></div>
                   </div>
-                  <button class="range-toggle range-toggle-min"></button>
-                  <button class="range-toggle range-toggle-max"></button>
+                  <button type="button" aria-label="минимальное значение" class="range-toggle range-toggle-min"></button>
+                  <button type="button" aria-label="максимальное значение" class="range-toggle range-toggle-max"></button>
                 </div>
               </div>
 
@@ -111,81 +109,86 @@
       </section>
 
       <section class="hotel-catalog container">
-        <h2 class="visually-hidden">Каталог отелей</h2>
         <div class="hotel-catalog-header">
-          <div class="hotel-catalog-search-result">Найдено гостиниц: <span class="search-result-number">38</span>
-          </div>
+          <h2 class="hotel-catalog-search-result">Найдено гостиниц: <span class="search-result-number">38</span></h2>
           <div class="hotel-catalog-header-dropdown">
             <select name="dropdown-costs" id="dropdown-costs" class="dropdown-costs">
               <option value="cheap">Сначала дешёвые</option>
               <option value="expensive">Сначала дорогие</option>
             </select>
           </div>
-          <div class="filter-icons-wrapper">
-            <a class="filter-icons-item view-web"><span class="visually-hidden">Раскладка сеткой</span></a>
-            <a class="filter-icons-item view-huge"><span class="visually-hidden">Крупная раскладка</span></a>
-            <a class="filter-icons-item view-list"><span class="visually-hidden">Раскладка списком</span></a>
-          </div>
+          <ul class="filter-icons-wrapper">
+            <li><button type="button" class="filter-icons-item view-web"><span class="visually-hidden">Раскладка сеткой</span></button></li>
+            <li><button type="button" class="filter-icons-item view-huge"><span class="visually-hidden">Крупная раскладка</span></button></li>
+            <li><button type="button" class="filter-icons-item view-list"><span class="visually-hidden">Раскладка списком</span></button></li>
+          </ul>
         </div> 
 
-        <div class="hotel-catalog-carts">
-          <div class="hotel-catalog-carts-item">
+        <ul class="hotel-catalog-carts">
+
+          <li class="hotel-catalog-carts-item">
             <img width="300" height="212" class="hotel-catalog-carts-item-img" src="img/hotel-amara.jpg" alt="Отель Амара">
             <div class="catalog-carts-item-description">
-              <div class="hotel-name">Amara Resort & Spa</div>
+              <h3 class="hotel-name">Amara Resort & Spa</h3>
               <div class="hotel-type">Гостиница</div>
               <div class="hotel-price">От 4000 ₽</div>
               <a href="#" class="hotel-read-more brown-button">подробнее</a>
-              <button class="hotel-to-favourite blue-button">в избранное</button>
+              <button type="button" class="hotel-to-favourite blue-button">в избранное</button>
               <div class="hotel-stars four-stars"></div>
               <div class="hotel-raiting-amount">Рейтинг: 8,5</div>
             </div>
-          </div> 
-          <div class="hotel-catalog-carts-item">
+          </li> 
+
+          <li class="hotel-catalog-carts-item">
             <img width="300" height="212" class="hotel-catalog-carts-item-img" src="img/hotel-diablo.jpg" alt="Отель Диабло">
             <div class="catalog-carts-item-description">
-              <div class="hotel-name">Villas at Poco Diablo</div>
+              <h3 class="hotel-name">Villas at Poco Diablo</h3>
               <div class="hotel-type">Гостиница</div>
               <div class="hotel-price">От 5000 ₽</div>
               <a href="#" class="hotel-read-more brown-button">подробнее</a>
-              <button class="hotel-to-favourite green-button">в избранном</button>
+              <button type="button" class="hotel-to-favourite green-button">в избранном</button>
               <div class="hotel-stars four-stars"></div>
               <div class="hotel-raiting-amount">Рейтинг: 9,2</div>
             </div>
-          </div>
-          <div class="hotel-catalog-carts-item">
+          </li>
+
+          <li class="hotel-catalog-carts-item">
             <img width="300" height="212" class="hotel-catalog-carts-item-img" src="img/hotel-desert.jpg" alt="Отель в пустыне">
             <div class="catalog-carts-item-description">
-              <div class="hotel-name">Desert Quail Inn</div>
+              <h3 class="hotel-name">Desert Quail Inn</h3>
               <div class="hotel-type">Гостиница</div>
               <div class="hotel-price">От 2500 ₽</div>
               <a href="#" class="hotel-read-more brown-button">подробнее</a>
-              <button class="hotel-to-favourite blue-button">в избранное</button>
+              <button type="button" class="hotel-to-favourite blue-button">в избранное</button>
               <div class="hotel-stars three-stars"></div>
               <div class="hotel-raiting-amount">Рейтинг: 6,9</div>
             </div>
-          </div> 
-          <div class="hotel-catalog-carts-item">
+          </li> 
+
+          <li class="hotel-catalog-carts-item">
             <img width="300" height="212" class="hotel-catalog-carts-item-img" src="img/hotel-green-tree.jpg" alt="Отель зеленое дерево">
             <div class="catalog-carts-item-description">
-              <div class="hotel-name">GreenTree Inn</div>
+              <h3 class="hotel-name">GreenTree Inn</h3>
               <div class="hotel-type">Гостиница</div>
               <div class="hotel-price">От 1500 ₽</div>
               <a href="#" class="hotel-read-more brown-button">подробнее</a>
-              <button class="hotel-to-favourite blue-button">в избранное</button>
+              <button type="button" class="hotel-to-favourite blue-button">в избранное</button>
               <div class="hotel-stars two-stars"></div>
               <div class="hotel-raiting-amount">Рейтинг: 5,0</div>
             </div>
-          </div>   
-        </div>
-        <div class="pagination-box">
-          <a href="#" class="pagination-box-item current-page">1</a>
-          <a href="#" class="pagination-box-item">2</a>
-          <a href="#" class="pagination-box-item">3</a>
-          <a href="#" class="pagination-box-item">4</a>
-          <a href="#" class="pagination-box-item white-block">...</a>
-          <a href="#" class="pagination-box-item">10</a>
-        </div> 
+          </li> 
+
+        </ul>
+
+        <ul class="pagination-box">
+          <li><a href="#" class="pagination-box-item current-page">1</a></li>
+          <li><a href="#" class="pagination-box-item">2</a></li>
+          <li><a href="#" class="pagination-box-item">3</a></li>
+          <li><a href="#" class="pagination-box-item">4</a></li>
+          <li><a href="#" class="pagination-box-item white-block">...</a></li>
+          <li><a href="#" class="pagination-box-item">10</a></li>
+        </ul>
+
       </section>
 
       <article class="email-block container">
@@ -279,8 +282,7 @@
         </li>
       </ul>
       <a href="tel:+78128121212" class="page-footer-phone">+7 (812) 812-12-12</a>
-      <a class="page-footer-copyright-link" href="https://htmlacademy.ru/"><span class="visually-hidden">Html academy copyright</span>
-      </a>
+      <a class="page-footer-copyright-link" href="https://htmlacademy.ru/" aria-label="Html academy copyright"></a>
     </footer>
   </div>  
   <script src="js/popup.js"></script>

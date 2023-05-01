@@ -92,7 +92,7 @@ button, a, label {
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
@@ -132,7 +132,7 @@ html {
   text-transform: capitalize;
   color: #000000;
   text-decoration: none;
-  padding: 12px 14px;
+  padding: 14px 16px;
   position: relative;
   display: inline-block;
   margin-top: -11px;
@@ -182,6 +182,7 @@ html {
   background: none;
   background-image: url(../img/search.svg);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .user-nav-favourite {
@@ -192,7 +193,8 @@ html {
   background: none;
   background-image: url(../img/heart.svg);
   background-size: cover;
-  position: relative;  
+  position: relative;
+  background-repeat: no-repeat;  
 }
 
 .user-nav-favourite-number {
@@ -221,11 +223,12 @@ html {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  background-image: url(../img/hero-background.jpg);
+  background: #89b35c url(../img/hero-background.jpg);
   background-size: cover;
   position: relative;
   margin-bottom: 69px;
   margin-top: -16px;
+  background-repeat: no-repeat;
 }
 
 .hero-block:after {
@@ -247,6 +250,7 @@ html {
   background-image: url(../img/welcome.svg);
   background-size: cover;
   position: relative;
+  background-repeat: no-repeat;
 }
 
 .hero-block-subtitle:after {
@@ -259,6 +263,7 @@ html {
   position: absolute;
   bottom: -40px;
   left: -33px;
+  background-repeat: no-repeat;
 }
 
 .hero-block-title {
@@ -267,6 +272,7 @@ html {
   background-image: url(../img/sedona.svg);
   background-size: cover;
   position: relative;
+  background-repeat: no-repeat;
 }
 
 .hero-block-subtitle {
@@ -306,6 +312,8 @@ html {
   display: grid;
   grid-template-rows: 385px 385px 385px;
   grid-template-columns: 400px 400px 400px;
+  padding: 0;
+  list-style: none;
 }
 
 .about-box-second, .about-box-sixth {
@@ -339,13 +347,15 @@ html {
 }
 
 .about-box-second {
-  background-image: url(../img/true-city.jpg);
-  background-size: cover;  
+  background: #8cb2d0 url(../img/true-city.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;  
 }
 
 .about-box-sixth {
-  background-image: url(../img/bridge.jpg);
-  background-size: cover;  
+  background: #8cb2d0 url(../img/bridge.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;  
 }
 
 .square-item-title {
@@ -356,6 +366,7 @@ html {
   text-align: center;
   text-transform: uppercase;
   max-width: 180px;
+  margin: 0;
   margin-bottom: 62px;
   position: relative;
 }
@@ -367,6 +378,7 @@ html {
   line-height: 21px;
   text-align: center;
   max-width: 230px;
+  margin: 0;
   color: #333333;
 }
 
@@ -417,6 +429,8 @@ html {
   display: grid;
   grid-template-rows: 385px;
   grid-template-columns: 400px 400px 400px;
+  padding: 0;
+  list-style: none;
 }
 
 .advantage-item {
@@ -514,9 +528,10 @@ h2.call-to-action-title {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../img/form-background.jpg);
+  background: #615048 url(../img/form-background.jpg);
   background-size: cover;
   padding: 20px;
+  background-repeat: no-repeat;
 }
 
 .email-block-title {
@@ -594,6 +609,7 @@ li.footer-social-item {
   background-image: url(../img/vk.svg);
   background-size: cover;
   display: block;
+  background-repeat: no-repeat;
 }
 
 .telegram {
@@ -602,6 +618,7 @@ li.footer-social-item {
   background-image: url(../img/telegram.svg);
   background-size: cover;
   display: block;  
+  background-repeat: no-repeat;
 }
 
 .youtube {
@@ -609,7 +626,8 @@ li.footer-social-item {
   height: 17px;
   background-image: url(../img/youtube.svg);
   background-size: cover;
-  display: block;  
+  display: block;
+  background-repeat: no-repeat;  
 }
 
 .vk:hover {
@@ -703,12 +721,13 @@ li.footer-social-item {
 }
 
 .main-index .hero-block-filter.container {
-  background-image: url(../img/background-catalog.jpg);
+  background: #8cb2d0 url(../img/background-catalog.jpg);
   padding: 35px 70px 55px 70px;
-  margin-bottom: 49px;
+  margin-bottom: 33px;
   margin-top: -16px;
   background-size: cover;
   min-height: 412px;
+  background-repeat: no-repeat;
 }
 
 
@@ -746,20 +765,14 @@ li.footer-social-item {
   height: 12px;
   background-size: cover;
   background-image: url(../img/icon-home.svg);
-}
-
-.breadcrumbs-home-icon.breadcrumbs-item:after {
-  content: '>';
-  position: absolute;
-  right: -19px;
-  top: -5px;
+  background-repeat: no-repeat;
 }
 
 .breadcrumbs {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 28px;
+  gap: 10px;
   margin-bottom: 40px;
 }
 
@@ -829,7 +842,7 @@ li.footer-social-item {
   position: absolute;
   z-index: 5;
   top: 14px;
-  right: 13px;
+  right: 18px;
   color: #000000;
   font-weight: 400;
   font-size: 18px;
@@ -842,7 +855,7 @@ li.footer-social-item {
   position: absolute;
   z-index: 5;
   top: 14px;
-  right: 13px;
+  right: 20px;
   color: #000000;
   font-weight: 400;
   font-size: 18px;
@@ -885,6 +898,11 @@ li.footer-social-item {
   top: -8px;
 }
 
+.range-toggle.range-toggle-min:hover, .range-toggle.range-toggle-max:hover {
+  opacity: 1;
+  transform: scale(1.1);
+} 
+
 .filter-button-wrapper {
   display: flex;
   flex-direction: column;
@@ -921,13 +939,15 @@ li.footer-social-item {
   justify-content: space-between;
   margin-bottom: 40px;
   border-bottom: 1px solid #E6E6E6;
+  list-style: none;
+  padding: 0;
 }
 
 .hotel-catalog-header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 36px;
+  margin-bottom: 20px;
   align-items: center;
 }
 
@@ -967,6 +987,7 @@ li.footer-social-item {
   height: 48px;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
+  background-color: inherit;
 }
 
 .filter-icons-item:hover {
@@ -984,8 +1005,11 @@ li.footer-social-item {
 
 .filter-icons-wrapper {
   display: flex;
-  gap: 2px;
+  gap: 8px;
   flex-wrap: wrap;
+  max-width: 180px;
+  list-style: none;
+  padding: 0;
 }
 
 .view-web {
@@ -1005,6 +1029,7 @@ li.footer-social-item {
 
 .filter-icons-item {
   background-position: center;
+  display: block;
 }
 
 .view-web.active {
@@ -1012,7 +1037,7 @@ li.footer-social-item {
 }
 
 .hotel-catalog-carts-item {
-  padding: 20px 20px 32px 20px;
+  padding: 20px 20px 19px 20px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
   margin-bottom: 18px;
@@ -1028,6 +1053,7 @@ li.footer-social-item {
   color: #000000;
   grid-column: span 2;
   font-family: 'PT Sans';
+  margin: 0;
 }
 
 .hotel-type {
@@ -1152,6 +1178,8 @@ li.footer-social-item {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  list-style: none;
+  padding: 0;
 }
 
 .pagination-box-item.current-page {
@@ -1169,7 +1197,7 @@ li.footer-social-item {
 }
 
 .catalog-page .email-block.container {
-  background-image: inherit;
+  background: inherit;
 }
 
 .search-popup-fieldset {
@@ -1179,7 +1207,7 @@ li.footer-social-item {
 .search-popup-form {
   max-width: 717px;
   margin: 0 auto;
-  padding: 64px 70px;
+  padding: 54px 70px;
   background: #FFFFFF;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
@@ -1203,7 +1231,6 @@ li.footer-social-item {
   align-items: center;
   text-transform: capitalize;
   color: #000000;
-  margin-right: 24px;
 }
 
 
@@ -1231,7 +1258,7 @@ li.footer-social-item {
 }
 
 .date-check-in-input, .date-check-out-input {
-  min-width: 412px;
+  min-width: 437px;
   background: #F2F2F2;
   border-radius: 4px;
   border: inherit;
@@ -1257,7 +1284,7 @@ li.footer-social-item {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 48px;
+  margin-bottom: 55px;
   position: relative;
   align-items: center;
 }
@@ -1350,7 +1377,7 @@ fieldset.search-popup-fieldset {
   content: 'Мы не можем отправить вас в прошлое.';
   position: absolute;
   bottom: -25px;
-  right: 100px;
+  right: 139px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -1361,7 +1388,7 @@ fieldset.search-popup-fieldset {
   content: 'На эти даты есть свободные номера. Пока есть.';
   position: absolute;
   bottom: -30px;
-  right: 35px;
+  right: 89px;
 }
 
 span.calendar-icon {
@@ -1370,8 +1397,9 @@ span.calendar-icon {
   height: 15px;
   background-size: contain;
   position: absolute;
-  right: 14px;
+  right: 21px;
   opacity: 0.3;
+  background-repeat: no-repeat;
 }
 
 .search-popup-title-age {
@@ -1461,6 +1489,7 @@ span.children-title {
   top: -9px;
   z-index: 5;
   left: 127px;
+  background-repeat: no-repeat;
 }
 
 .popup-switcher {
@@ -1471,6 +1500,7 @@ article.search-popup {
   position: fixed;
   width: 100%;
   top: 0px;
+  left: 0;
   padding-top: 100px;
   background: #ffffffdb;
   z-index: 15;
@@ -1490,12 +1520,15 @@ article.search-popup {
   width: fit-content;
   background: #F2F2F2;
   border-radius: 50px;
+  position: relative;
+  right: -17px;
+  bottom: -6px;
 }
 
 .search-popup-header {
   display: flex;
   align-items: center;
-  margin-bottom: 64px;
+  margin-bottom: 54px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -1630,6 +1663,7 @@ article.search-popup {
 
   background-image: url(../img/ok.svg);
   outline: #83B3D3 solid 2px;
+  background-repeat: no-repeat;
 }
 
 .control-radio-input {
@@ -1813,8 +1847,8 @@ a.page-footer-copyright-link:active {
   position: absolute;
   width: 71%;
   height: 100%;
-  top: 7px;
-  margin-left: 2px;
+  top: 3px;
+  margin-left: -2px;
   border-bottom: 2px solid #756257;
   z-index: 5;
 }
@@ -1897,4 +1931,16 @@ a.page-footer-copyright-link:active {
 
 span.breadcrumbs-item:hover {
     color: #FFFFFF;
+}
+
+.navigation-list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 43px;
+}
+
+.catalog-page .navigation-link {
+    padding: 14px 14px;
 }
