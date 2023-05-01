@@ -367,6 +367,7 @@ html {
 
 .about-box-square-item {
   display: flex;
+  background: rgba(131, 179, 211, 0.12);
 }
 
 .about-box-third, .about-box-fourth, .about-box-fifth {
