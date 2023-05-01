@@ -310,27 +310,63 @@ html {
 
 .about-box-squares {
   display: grid;
-  grid-template-rows: 385px 385px 385px;
-  grid-template-columns: 400px 400px 400px;
+  grid-template-columns: repeat(3, 400px);
   padding: 0;
   list-style: none;
 }
 
-.about-box-second, .about-box-sixth {
-  grid-column: span 2;
-}
-
-.about-box-square-item {
-  display: flex;
+.square-item-content {
+  width: 400px;
+  flex-shrink: 0;
+  min-height: 385px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  display: flex;
 }
 
-.about-box-first, .about-box-seventh {
+.square-item-picture {
+  flex-grow: 1;
+  position: relative;
+}
+
+.square-item-has-picture {
+  grid-column: 1/-1;
+}
+
+.about-box-square-item-dark {
   color: #FFFFFF;
   background: #82B3D3;
+}
+
+.about-box-square-item-dark .square-item-description {
+  color: #FFFFFF;
+}
+
+.about-box-square-item-dark .square-item-title:after {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.about-box-square-item-light {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.about-box-square-item-very-light {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.square-item-picture img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-box-square-item {
+  display: flex;
 }
 
 .about-box-third, .about-box-fourth, .about-box-fifth {
@@ -383,7 +419,7 @@ html {
 }
 
 .about-box-first .square-item-description, .about-box-seventh .square-item-description {
-    color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .square-item-title:after {
@@ -449,6 +485,7 @@ html {
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
   margin-bottom: 30px;
 }
 
@@ -466,6 +503,7 @@ html {
   line-height: 21px;
   text-align: center;
   color: #333333;
+  margin: 0;
 }
 
 .about-box.container, .advantages-box.container {
@@ -507,7 +545,7 @@ h2.call-to-action-title {
   text-transform: uppercase;
   color: #000000;
   margin-bottom: 20px;
-  margin-top: -3px;
+  margin-top: -33px;
 }
 
 .call-to-action-decription {
@@ -532,6 +570,7 @@ h2.call-to-action-title {
   background-size: cover;
   padding: 20px;
   background-repeat: no-repeat;
+  margin-top: -17px;
 }
 
 .email-block-title {
@@ -1125,7 +1164,7 @@ li.footer-social-item {
 }
 
 .hotel-read-more.brown-button {
-    min-height: inherit;
+  min-height: inherit;
 }
 
 .hotel-stars {
@@ -1736,28 +1775,25 @@ input::-webkit-inner-spin-button {
   color: rgba(117, 97, 87, 0.3);
 }
 
-a.page-footer-copyright-link {
+.page-footer-copyright-link {
   display: block;
   width: 115px;
   height: 33px;
-  background-image: url(../img/html-academy.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 
-a.page-footer-copyright-link:hover {
+.page-footer-copyright-link:hover {
   background-image: url(../img/html-academy-2.svg);
   opacity: 1;
 }
 
-a.page-footer-copyright-link:focus {
+.page-footer-copyright-link:focus {
   background-image: url(../img/html-academy-2.svg);
   opacity: 1;
   outline: inherit;
 }
 
-a.page-footer-copyright-link:active {
+.page-footer-copyright-link:active {
   background-image: url(../img/html-academy-3.svg);
   opacity: 1;
 }
@@ -1883,7 +1919,7 @@ a.page-footer-copyright-link:active {
 }
 
 .main-index {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .infrastructure-group {
@@ -1900,8 +1936,8 @@ a.page-footer-copyright-link:active {
 
 .hotel-catalog-carts-item-img {
   margin-bottom: 7px;
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 .catalog-page .email-block-title {
@@ -1926,21 +1962,37 @@ a.page-footer-copyright-link:active {
 }
 
 .catalog-page .signup-email-input {
-    background: #F2F2F2;
+  background: #F2F2F2;
 }
 
 span.breadcrumbs-item:hover {
-    color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .navigation-list {
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 43px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 43px;
 }
 
 .catalog-page .navigation-link {
-    padding: 14px 14px;
+  padding: 14px 14px;
+}
+
+.catalog-page .email-block {
+  margin-top: 0px;
+}
+
+.page-footer-copyright-link:hover svg path {
+  fill: #756157;
+}
+
+.page-footer-copyright-link:focus svg path{
+  fill: #756157;
+}
+
+.page-footer-copyright-link:active svg path {
+  fill: rgba(117, 97, 87, 0.3);
 }
