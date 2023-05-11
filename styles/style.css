@@ -497,6 +497,7 @@ html {
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 30px;
+  color: #000000;
 }
 
 .advantage-item-img {
@@ -1184,6 +1185,10 @@ li.footer-social-item {
   min-height: inherit;
 }
 
+.brown-button {
+  text-decoration: none;
+}
+
 .hotel-stars {
   background-image: url(../img/star.svg);
   height: 100%;
@@ -1422,7 +1427,7 @@ fieldset.search-popup-fieldset {
 
 .search-popup-button.button:focus {
   opacity: 1;
-  outline: none; 
+  background: #68A2CA; 
 }
 
 .search-popup-button.button:active {
@@ -1611,7 +1616,6 @@ article.search-popup {
 .brown-button:focus {
   background: #615048;
   opacity: 1;
-  outline: none;
 }
 
 .brown-button:active {
